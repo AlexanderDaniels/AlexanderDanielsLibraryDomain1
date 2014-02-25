@@ -4,7 +4,7 @@
  */
 package com.alex.tp.library.test;
 
-import com.alex.tp.library.encapsulation.BookDetails;
+import com.alex.tp.library.encapsulation.services.BookDetails;
 import org.testng.Assert;
 import static org.testng.Assert.*;
 import org.testng.annotations.AfterClass;

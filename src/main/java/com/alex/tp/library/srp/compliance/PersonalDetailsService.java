@@ -2,14 +2,14 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.alex.tp.library.inheritance;
+package com.alex.tp.library.srp.compliance;
 
 /**
  *
  * @author Alex
  */
-public interface Human {
+public interface PersonalDetailsService {
     String name(String nme);
     String surname(String srnme);
-    int telephoneNum(int telPhNum);
+    int age(int age);
 }

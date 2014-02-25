@@ -4,8 +4,8 @@
  */
 package com.alex.tp.library.test;
 
-import com.alex.tp.library.polymorphism.Salary;
-import com.alex.tp.library.polymorphism.Worker;
+import com.alex.tp.library.polymorphism.services.Salary;
+import com.alex.tp.library.polymorphism.services.Worker;
 import org.testng.Assert;
 import static org.testng.Assert.*;
 import org.testng.annotations.AfterClass;

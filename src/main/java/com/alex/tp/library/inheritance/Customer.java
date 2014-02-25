@@ -4,6 +4,8 @@
  */
 package com.alex.tp.library.inheritance;
 
+import com.alex.tp.library.inheritance.services.Impl.Persons;
+
 /**
  *
  * @author Alex

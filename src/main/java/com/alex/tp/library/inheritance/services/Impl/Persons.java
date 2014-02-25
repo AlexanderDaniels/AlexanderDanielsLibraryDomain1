@@ -2,7 +2,9 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.alex.tp.library.inheritance;
+package com.alex.tp.library.inheritance.services.Impl;
+
+import com.alex.tp.library.inheritance.services.Human;
 
 /**
  *
