@@ -33,7 +33,7 @@ public class InheritanceTest {
     }
     
     @Test
-    public void WorkerSurnameTest() {
+    public void workerSurnameTest() {
         Worker w = new Worker();
         
         Assert.assertEquals("Kroning", w.surname("Kroning"));
