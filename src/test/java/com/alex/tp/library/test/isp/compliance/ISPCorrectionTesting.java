@@ -4,9 +4,9 @@
  */
 package com.alex.tp.library.test.isp.compliance;
 
-import com.alex.tp.library.config.isp.compliance.PersonalDetailsAppConf;
-import com.alex.tp.library.config.isp.compliance.SalaryAppConf;
-import com.alex.tp.library.config.isp.compliance.TypeWorkerAppConf;
+import com.alex.tp.library.config.isp.compliance.PersonalDetailsAppConfig;
+import com.alex.tp.library.config.isp.compliance.SalaryAppConfig;
+import com.alex.tp.library.config.isp.compliance.TypeWorkerAppConfig;
 import com.alex.tp.library.isp.compliance.PersonalDetailsService;
 import com.alex.tp.library.isp.compliance.SalaryService;
 import com.alex.tp.library.isp.compliance.TypeWorkerService;
@@ -24,7 +24,7 @@ import org.testng.annotations.Test;
  *
  * @author Alex
  */
-public class ISPTesting {
+public class ISPCorrectionTesting {
     private static ApplicationContext ctx;
     private static ApplicationContext ctx1;
     private static ApplicationContext ctx2;
@@ -33,7 +33,7 @@ public class ISPTesting {
     private static SalaryService salary;
     private static TypeWorkerService typeWorker;
     
-    public ISPTesting() {
+    public ISPCorrectionTesting() {
     }
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
@@ -55,9 +55,9 @@ public class ISPTesting {
 
     @BeforeClass
     public static void setUpClass() throws Exception {
-        ApplicationContext ctx = new AnnotationConfigApplicationContext(PersonalDetailsAppConf.class);
-        ApplicationContext ctx1 = new AnnotationConfigApplicationContext(SalaryAppConf.class);
-        ApplicationContext ctx2 = new AnnotationConfigApplicationContext(TypeWorkerAppConf.class);
+        ApplicationContext ctx = new AnnotationConfigApplicationContext(PersonalDetailsAppConfig.class);
+        ApplicationContext ctx1 = new AnnotationConfigApplicationContext(SalaryAppConfig.class);
+        ApplicationContext ctx2 = new AnnotationConfigApplicationContext(TypeWorkerAppConfig.class);
         
         personalDetails = (PersonalDetailsService)ctx.getBean("personal");
         salary = (SalaryService)ctx1.getBean("salary");

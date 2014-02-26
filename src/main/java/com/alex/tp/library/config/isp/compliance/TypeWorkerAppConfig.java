@@ -4,8 +4,8 @@
  */
 package com.alex.tp.library.config.isp.compliance;
 
-import com.alex.tp.library.isp.compliance.Impl.SalaryServiceImpl;
-import com.alex.tp.library.isp.compliance.SalaryService;
+import com.alex.tp.library.isp.compliance.Impl.TypeWorkerServiceImpl;
+import com.alex.tp.library.isp.compliance.TypeWorkerService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -14,10 +14,10 @@ import org.springframework.context.annotation.Configuration;
  * @author Alex
  */
 @Configuration
-public class SalaryAppConf {
-    @Bean(name="salary")
+public class TypeWorkerAppConfig {
+    @Bean(name="type")
     
-    public SalaryService getService(){
-        return new SalaryServiceImpl();
+    public TypeWorkerService getService(){
+        return new TypeWorkerServiceImpl();
     }
 }

@@ -4,8 +4,8 @@
  */
 package com.alex.tp.library.config.isp.compliance;
 
-import com.alex.tp.library.isp.compliance.Impl.PersonalDetailsServiceImpl;
-import com.alex.tp.library.isp.compliance.PersonalDetailsService;
+import com.alex.tp.library.isp.compliance.Impl.SalaryServiceImpl;
+import com.alex.tp.library.isp.compliance.SalaryService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -14,10 +14,10 @@ import org.springframework.context.annotation.Configuration;
  * @author Alex
  */
 @Configuration
-public class PersonalDetailsAppConf {
-    @Bean(name="personal")
+public class SalaryAppConfig {
+    @Bean(name="salary")
     
-    public PersonalDetailsService getService(){
-        return new PersonalDetailsServiceImpl();
+    public SalaryService getService(){
+        return new SalaryServiceImpl();
     }
 }

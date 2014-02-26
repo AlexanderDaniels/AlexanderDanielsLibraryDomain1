@@ -23,14 +23,14 @@ import org.testng.annotations.Test;
  *
  * @author Alex
  */
-public class SRPTesting {
+public class SRPCorrectionTesting {
     
     private static ApplicationContext ctx;
     private static ApplicationContext ctx1;
     private static PersonalDetailsService personalService;
     private static ContactDetailsService contactService;
     
-    public SRPTesting() {
+    public SRPCorrectionTesting() {
     }
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:

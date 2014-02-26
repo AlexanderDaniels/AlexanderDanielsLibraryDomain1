@@ -4,8 +4,8 @@
  */
 package com.alex.tp.library.config.isp.compliance;
 
-import com.alex.tp.library.isp.compliance.Impl.TypeWorkerServiceImpl;
-import com.alex.tp.library.isp.compliance.TypeWorkerService;
+import com.alex.tp.library.isp.compliance.Impl.PersonalDetailsServiceImpl;
+import com.alex.tp.library.isp.compliance.PersonalDetailsService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -14,10 +14,10 @@ import org.springframework.context.annotation.Configuration;
  * @author Alex
  */
 @Configuration
-public class TypeWorkerAppConf {
-    @Bean(name="type")
+public class PersonalDetailsAppConfig {
+    @Bean(name="personal")
     
-    public TypeWorkerService getService(){
-        return new TypeWorkerServiceImpl();
+    public PersonalDetailsService getService(){
+        return new PersonalDetailsServiceImpl();
     }
 }
