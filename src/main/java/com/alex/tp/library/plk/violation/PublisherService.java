@@ -4,11 +4,11 @@
  */
 package com.alex.tp.library.plk.violation;
 
+
 /**
  *
  * @author Alex
  */
 public interface PublisherService{
-    String publisherName(String publisherName);
-    int numberBooks(int numBooks);
+    AuthorService getAuthorName();
 }

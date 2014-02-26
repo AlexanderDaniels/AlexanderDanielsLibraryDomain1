@@ -8,7 +8,6 @@ package com.alex.tp.library.plk.compliance;
  *
  * @author Alex
  */
-public interface PublisherService extends AuthorService{
-    String publisherName(String publisherName);
-    int numberBooks(int numBooks);
+public interface PublisherService{
+    AuthorService getAuthorName();
 }

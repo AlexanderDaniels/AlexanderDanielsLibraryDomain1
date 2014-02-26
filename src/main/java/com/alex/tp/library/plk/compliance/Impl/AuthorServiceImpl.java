@@ -15,8 +15,4 @@ public class AuthorServiceImpl implements AuthorService{
     public String authorName(String authorName) {
         return authorName;
     }
-
-    public String bookName(String bookName) {
-        return bookName;
-    }
 }

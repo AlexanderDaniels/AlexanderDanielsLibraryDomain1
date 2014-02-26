@@ -5,30 +5,15 @@
 package com.alex.tp.library.plk.compliance.Impl;
 
 import com.alex.tp.library.plk.compliance.LibrarianService;
+import com.alex.tp.library.plk.compliance.PublisherService;
 
 /**
  *
  * @author Alex
  */
 public class LibrarianServiceImpl implements LibrarianService{
-
-    public String librarianName(String libName) {
-        return libName;
+    private PublisherServiceImpl p = new PublisherServiceImpl();
+    public PublisherService getAuthorName() {
+        return  p;   
     }
-
-    public String publisherName(String publisherName) {
-        return publisherName;
-    }
-
-    public int numberBooks(int numBooks) {
-        return numBooks;
-    }
-
-    public String authorName(String authorName) {
-        return authorName;
-    }
-
-    public String bookName(String bookName) {
-        return bookName;
-    }    
 }

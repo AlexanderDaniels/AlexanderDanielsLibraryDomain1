@@ -42,7 +42,8 @@ public class PLKViolationTesting {
     @Test
     public void plkViolatingTesting()
     {
-        
+        String authorN = libservice.getAuthorName().authorName("Alex");
+        Assert.assertEquals("Alex", authorN);
     
     }
 

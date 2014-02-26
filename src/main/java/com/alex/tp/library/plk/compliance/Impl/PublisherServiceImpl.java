@@ -4,6 +4,7 @@
  */
 package com.alex.tp.library.plk.compliance.Impl;
 
+import com.alex.tp.library.plk.compliance.AuthorService;
 import com.alex.tp.library.plk.compliance.PublisherService;
 
 /**
@@ -11,20 +12,8 @@ import com.alex.tp.library.plk.compliance.PublisherService;
  * @author Alex
  */
 public class PublisherServiceImpl implements PublisherService{
-
-    public String publisherName(String publisherName) {
-        return publisherName;
+    private AuthorServiceImpl a = new AuthorServiceImpl();
+    public AuthorService getAuthorName() {
+        return a;
     }
-
-    public int numberBooks(int numBooks) {
-        return numBooks;
-    }
-
-    public String authorName(String authorName) {
-        return authorName;
-    }
-
-    public String bookName(String bookName) {
-        return bookName;
-    }    
 }
