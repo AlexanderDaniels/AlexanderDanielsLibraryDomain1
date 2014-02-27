@@ -8,6 +8,6 @@ package com.alex.tp.library.lsp.compliance.Impl;
  *
  * @author Alex
  */
-public class Owner extends PersonServiceImpl{
+public class NonSalary extends PersonServiceImpl{
     
 }

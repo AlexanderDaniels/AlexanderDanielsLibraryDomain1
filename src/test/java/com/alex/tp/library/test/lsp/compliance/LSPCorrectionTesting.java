@@ -4,9 +4,9 @@
  */
 package com.alex.tp.library.test.lsp.compliance;
 
-import com.alex.tp.library.lsp.compliance.Impl.Librarian;
-import com.alex.tp.library.lsp.compliance.Impl.Owner;
+import com.alex.tp.library.lsp.compliance.Impl.NonSalary;
 import com.alex.tp.library.lsp.compliance.Impl.PersonServiceImpl;
+import com.alex.tp.library.lsp.compliance.Impl.Salary;
 import com.alex.tp.library.lsp.compliance.PersonService;
 import java.util.ArrayList;
 import java.util.List;
@@ -33,8 +33,8 @@ public class LSPCorrectionTesting {
     public void lspCorrectionTesting() {
         List<PersonService> person = new ArrayList<PersonService>();
         person.add(new PersonServiceImpl());
-        person.add(new Librarian());
-        person.add(new Owner());
+        person.add(new NonSalary());
+        person.add(new Salary());
         
         for(PersonService p : person)
             p.name(null);

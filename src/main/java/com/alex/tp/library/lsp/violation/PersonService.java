@@ -2,9 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.alex.tp.library.lsp.compliance;
-
-import com.alex.tp.library.lsp.violation.*;
+package com.alex.tp.library.lsp.violation;
 
 /**
  *
@@ -12,4 +10,5 @@ import com.alex.tp.library.lsp.violation.*;
  */
 public interface PersonService {
     public String name(String name);
+    public String task(String task);
 }

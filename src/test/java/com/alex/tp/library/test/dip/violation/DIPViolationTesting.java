@@ -22,8 +22,6 @@ import org.testng.annotations.Test;
 public class DIPViolationTesting {
     
     private static Owner owner;
-    private static LibrarianServiceImpl lib;
-    private static SuperLibrarianServiceImpl superLib;
     
     public DIPViolationTesting() {
     }
