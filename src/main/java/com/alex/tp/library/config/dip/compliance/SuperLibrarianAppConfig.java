@@ -18,6 +18,6 @@ public class SuperLibrarianAppConfig {
     @Bean(name="person2")
     
     public PersonService getService(){
-        return new SuperLibrarianServiceImpl();
+        return new SuperLibrarianServiceImpl() {};
     }
 }

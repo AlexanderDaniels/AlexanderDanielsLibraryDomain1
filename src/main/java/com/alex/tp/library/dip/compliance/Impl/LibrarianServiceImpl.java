@@ -10,7 +10,7 @@ import com.alex.tp.library.dip.compliance.PersonService;
  *
  * @author Alex
  */
-public class LibrarianServiceImpl implements PersonService{
+public abstract class LibrarianServiceImpl implements PersonService{
 
     public String task(String toDo) {
         return toDo;

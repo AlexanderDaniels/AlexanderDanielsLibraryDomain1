@@ -18,6 +18,6 @@ public class LibrarianAppConfig {
     @Bean(name="person1")
     
     public PersonService getService(){
-        return new LibrarianServiceImpl();
+        return new LibrarianServiceImpl() {};
     }
 }
