@@ -23,7 +23,7 @@ public class DIPViolationTesting {
     // The methods must be annotated with annotation @Test. For example:
     //
     @Test
-    public void hello() {}
+    public void dipViolationTest() {}
 
     @BeforeClass
     public static void setUpClass() throws Exception {
