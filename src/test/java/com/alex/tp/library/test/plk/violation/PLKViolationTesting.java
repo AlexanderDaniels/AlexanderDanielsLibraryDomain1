@@ -24,14 +24,8 @@ import org.testng.annotations.Test;
  *
  * @author Alex
  */
-public class PLKViolationTesting {
-    
-    private static ApplicationContext ctx;
-    private static ApplicationContext ctx1;
-    private static ApplicationContext ctx2;
-    
-    private static AuthorService authorservice;
-    private static PublisherService publisherservice;
+public class PLKViolationTesting {    
+    private static ApplicationContext ctx2;    
     private static LibrarianService libservice;
     
     public PLKViolationTesting() {
@@ -43,18 +37,12 @@ public class PLKViolationTesting {
     public void plkViolatingTesting()
     {
         String authorN = libservice.getAuthorName().authorName("Alex");
-        Assert.assertEquals("Alex", authorN);
-    
+        Assert.assertEquals("Alex", authorN);    
     }
 
     @BeforeClass
     public static void setUpClass() throws Exception {
-        ApplicationContext ctx = new AnnotationConfigApplicationContext(AuthorAppConfig.class);
-        ApplicationContext ctx1 = new AnnotationConfigApplicationContext(PublisherAppConfig.class);
         ApplicationContext ctx2 = new AnnotationConfigApplicationContext(LibrarianAppConfig.class);
-        
-        authorservice = (AuthorService)ctx.getBean("author");
-        publisherservice = (PublisherService)ctx1.getBean("publisher");
         libservice = (LibrarianService)ctx2.getBean("lib");
     }
 

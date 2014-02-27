@@ -2,10 +2,10 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.alex.tp.library.test;
+package com.alex.tp.library.test.inheritance;
 
-import com.alex.tp.library.polymorphism.services.Salary;
-import com.alex.tp.library.polymorphism.services.Worker;
+import com.alex.tp.library.inheritance.Customer;
+import com.alex.tp.library.inheritance.Worker;
 import org.testng.Assert;
 import static org.testng.Assert.*;
 import org.testng.annotations.AfterClass;
@@ -18,27 +18,31 @@ import org.testng.annotations.Test;
  *
  * @author Alex
  */
-public class PolymorphismTest {
+public class InheritanceTest {
     
-    public PolymorphismTest() {
+    public InheritanceTest() {
     }
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //
     @Test
-    public void workerSalaryTest() {
-        Salary s = new Salary("Jakob", "12 Boom street", 12345, 50000.00);
-        Worker w = new Salary("Jakob", "12 Boom street", 12345, 50000.00);
-        
-        Assert.assertEquals(w.mailCheck(), s.mailCheck());// uses the same mailCheck from the Salary class, Worker class object is instance made of Salary class.
+    public void customerNameTest() {
+       Customer c = new Customer();
+       
+       Assert.assertEquals("Jacob", c.name("Jacob"));       
     }
     
     @Test
-    public void workerSalaryTest2() {
-        Salary s = new Salary("Jakob", "12 Boom street", 12345, 50000.00);
-        Worker w = new Worker("Jakob", "12 Boom street", 12345);
+    public void workerSurnameTest() {
+        Worker w = new Worker();
         
-        Assert.assertNotSame(w.mailCheck(), s.mailCheck());// checking the mailcheck in the Salary class with the one in the Worker class 
+        Assert.assertEquals("Kroning", w.surname("Kroning"));
+    }
+    
+    @Test
+    public void customertelephoneNumTest() {
+        Customer c = new Customer();
+        Assert.assertEquals(123, c.telephoneNum(123));
     }
 
     @BeforeClass

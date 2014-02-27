@@ -2,10 +2,9 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.alex.tp.library.test;
+package com.alex.tp.library.test.encapsulation;
 
-import com.alex.tp.library.inheritance.Customer;
-import com.alex.tp.library.inheritance.Worker;
+import com.alex.tp.library.encapsulation.services.BookDetails;
 import org.testng.Assert;
 import static org.testng.Assert.*;
 import org.testng.annotations.AfterClass;
@@ -18,35 +17,33 @@ import org.testng.annotations.Test;
  *
  * @author Alex
  */
-public class InheritanceTest {
+public class EncapsulationTest {
     
-    public InheritanceTest() {
+    public EncapsulationTest() {
     }
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //
-    @Test
-    public void customerNameTest() {
-       Customer c = new Customer();
-       
-       Assert.assertEquals("Jacob", c.name("Jacob"));       
-    }
     
     @Test
-    public void workerSurnameTest() {
-        Worker w = new Worker();
+    public void bookNameTest() {        
+        BookDetails bookDetails = new BookDetails();
+        bookDetails.setBookName("Java made easy");        
         
-        Assert.assertEquals("Kroning", w.surname("Kroning"));
+        Assert.assertEquals("Java made easy", bookDetails.getBookName());        
     }
     
     @Test
-    public void customertelephoneNumTest() {
-        Customer c = new Customer();
-        Assert.assertEquals(123, c.telephoneNum(123));
+    public void bookIsbnNumTest() {        
+        BookDetails bookDetails = new BookDetails();        
+        bookDetails.setIsbnNum(123456789);        
+        
+        Assert.assertEquals(123456789, bookDetails.getIsbnNum());
     }
 
     @BeforeClass
     public static void setUpClass() throws Exception {
+        
     }
 
     @AfterClass
